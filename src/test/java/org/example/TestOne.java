@@ -18,6 +18,7 @@ public class TestOne {
     public void testOne() throws InterruptedException {
         driver.get("https://www.google.com");
         Assert.assertEquals("Google",driver.getTitle());
+        System.out.println("Title of the Webpage is "+driver.getTitle());
 
         Thread.sleep(4000);
 
